@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import {Helmet} from "react-helmet";
 
 import Container from '../components/container'
+import reactImage from '../images/react-icon.svg'
+
+import './index.css'
 
 
 const IndexPage = () => (
@@ -12,10 +14,13 @@ const IndexPage = () => (
     </Helmet>
 
     <Container>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link>
+      <h1>React Course - Fall 2018
+        <img src={reactImage} width="120" className="react-logo" alt="react logo"/>
+      </h1>
+      <h2>Course Info</h2>
+      <h2>Course Program</h2>
+      <h2>Course Teachers</h2>
+      <h2>Price</h2>
     </Container>
   </React.Fragment>
 )
