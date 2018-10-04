@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import reactImage from './react-icon.svg';
-import styles from './styles.module.css';
+import reactImage from './react-icon.svg'
+import styles from './styles.module.css'
 
 export default () => {
   return (
@@ -11,5 +11,5 @@ export default () => {
       className={styles.ReactLogo}
       alt="react logo"
     />
-  );
-};
+  )
+}

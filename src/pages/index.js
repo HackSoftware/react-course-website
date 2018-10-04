@@ -1,21 +1,24 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
-import Inline from '../components/Inline';
-import Container from '../components/Container';
-import Section from '../components/Section';
-import ReactLogo from '../components/ReactLogo';
-import ApplyHere from '../components/ApplyHere';
-import Teachers from '../components/Teachers';
-import Footer from '../components/Footer';
+import Inline from '../components/Inline'
+import Container from '../components/Container'
+import Section from '../components/Section'
+import ReactLogo from '../components/ReactLogo'
+import ApplyHere from '../components/ApplyHere'
+import Teachers from '../components/Teachers'
+import Footer from '../components/Footer'
 
-import styles from './index.module.css';
-import './index.css';
+import styles from './index.module.css'
+import favicon from './favicon.ico'
+
+import './index.css'
 
 const IndexPage = () => (
   <React.Fragment>
     <Helmet>
-      <title>React Course</title>
+      <link rel="icon" href={favicon} type="image/x-icon" />
+      <title>React Course by HackBulgaria</title>
     </Helmet>
 
     <Container>
@@ -139,6 +142,6 @@ const IndexPage = () => (
       <Footer />
     </Container>
   </React.Fragment>
-);
+)
 
-export default IndexPage;
+export default IndexPage

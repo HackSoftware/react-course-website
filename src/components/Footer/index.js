@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import styles from './styles.module.css';
+import styles from './styles.module.css'
 
 export default () => {
   return (
@@ -10,7 +10,8 @@ export default () => {
         <a
           href="https://www.gatsbyjs.org/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Gatsby
         </a>{' '}
         by{' '}
@@ -19,5 +20,5 @@ export default () => {
         </a>
       </p>
     </div>
-  );
-};
+  )
+}
