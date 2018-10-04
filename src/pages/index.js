@@ -3,7 +3,7 @@ import {Helmet} from 'react-helmet';
 
 import Inline from '../components/Inline';
 import Container from '../components/container';
-import reactImage from '../images/react-icon.svg';
+import ReactLogo from '../components/ReactLogo';
 
 import styles from './index.module.css';
 import './index.css';
@@ -16,13 +16,9 @@ const IndexPage = () => (
 
     <Container>
       <h1>
+        <ReactLogo />
         React Course by HackBulgaria - Fall 2018
-        <img
-          src={reactImage}
-          width="120"
-          className="react-logo"
-          alt="react logo"
-        />
+        <ReactLogo />
       </h1>
       <h2>Course Info</h2>
       <ul className={styles.List}>
