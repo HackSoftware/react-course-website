@@ -5,14 +5,12 @@ import Inline from '../components/Inline';
 import Container from '../components/Container';
 import Section from '../components/Section';
 import ReactLogo from '../components/ReactLogo';
+import ApplyHere from '../components/ApplyHere';
 import Teachers from '../components/Teachers';
 import Footer from '../components/Footer';
 
 import styles from './index.module.css';
 import './index.css';
-
-const FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSchcj7b7slun0027babtwZFJsd8EFcm_oi5eYNny4999Wr4jQ/viewform';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -41,7 +39,8 @@ const IndexPage = () => (
             Happening in{' '}
             <a
               href="https://www.google.com/maps/place/Hack+Bulgaria/@42.6477396,23.3825581,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa86ed287d5e33:0x315f162015dedaa3!8m2!3d42.6477396!4d23.3847468"
-              target="_blank">
+              target="_blank"
+              rel="noopener noreferrer">
               HackBulgaria's lecture hall
             </a>
           </li>
@@ -49,9 +48,7 @@ const IndexPage = () => (
             Price - <strong>600 BGN with VAT included</strong>
           </li>
           <li>
-            <a href={FORM_URL} target="_blank">
-              You can apply here
-            </a>
+            <ApplyHere />
           </li>
         </ul>
       </Section>
@@ -60,6 +57,12 @@ const IndexPage = () => (
         <p>
           The course will cover React fundamentals in a practical way, with a
           lot of examples and coding.
+        </p>
+
+        <p>
+          <strong>
+            The course doesn't assume or require any existing React knowledge.
+          </strong>
         </p>
         <p>The high level agenda includes:</p>
         <ul className={styles.List}>
@@ -72,30 +75,42 @@ const IndexPage = () => (
             others.
           </li>
           <li>
-            Everything related to components - lifecycle methods, event
-            handlers, state, props, context
+            <strong>Everything related to components</strong> - lifecycle
+            methods, event handlers, state, props, context, etc.
           </li>
           <li>
-            Styling and layouting with CSS, using different techniques, like CSS
-            modules and CSS-in-JS
+            <strong>Styling and layouting with CSS</strong>, using different
+            techniques, like CSS modules and CSS-in-JS
           </li>
           <li>
-            Advanced component topics, like the new context api, higher order
-            components and compound components
+            <strong>Advanced component topics</strong>, like the new context
+            api, higher order components and compound components
           </li>
           <li>
-            Fetching data from the server and working with that data.
-            Immutability and lifting states
+            <strong>
+              Fetching data from the server and working with that data.
+            </strong>
+            Immutability and lifting states.
           </li>
           <li>
-            Working with forms and sending data to the server. Running sync and
-            async validations on our forms
+            <strong>Working with forms and sending data to the server.</strong>{' '}
+            Running sync and async validations on our forms.
           </li>
-          <li>Doing state management with Redux and Redux Saga</li>
-          <li>Doing state management and data fetching with GraphQL</li>
-          <li>Deploying React apps</li>
           <li>
-            Running React without <Inline>create-react-app</Inline>
+            <strong>Doing state management with Redux and Redux Saga</strong>
+          </li>
+          <li>
+            <strong>
+              Doing state management and data fetching with GraphQL
+            </strong>
+          </li>
+          <li>
+            <strong>Deploying</strong> React apps
+          </li>
+          <li>
+            Running React without <Inline>create-react-app</Inline> -{' '}
+            <Inline>babel</Inline>,<Inline>webpack</Inline> and custom
+            configuration.
           </li>
         </ul>
       </Section>
@@ -110,9 +125,7 @@ const IndexPage = () => (
           <strong>600 BGN with VAT included</strong>
         </p>
         <p>
-          <a href={FORM_URL} target="_blank">
-            You can apply here
-          </a>
+          <ApplyHere />
         </p>
 
         <p>
