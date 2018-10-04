@@ -33,14 +33,17 @@ const IndexPage = () => (
             </strong>
           </li>
           <li>
-            Twice a week - every Tuesday and Thursday from 19:00 to 21:30.
+            <strong>
+              Twice a week - every Tuesday and Thursday from 19:00 to 21:30.
+            </strong>
           </li>
           <li>
             Happening in{' '}
             <a
               href="https://www.google.com/maps/place/Hack+Bulgaria/@42.6477396,23.3825581,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa86ed287d5e33:0x315f162015dedaa3!8m2!3d42.6477396!4d23.3847468"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               HackBulgaria's lecture hall
             </a>
           </li>

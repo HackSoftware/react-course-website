@@ -1,6 +1,6 @@
 .TeacherImage {
   width: 20rem;
-  border: 2px solid;
+  border: 1px solid;
 }
 .TeacherContainer {
   width: 50%;
@@ -13,8 +13,6 @@
   }
 }
 
-.TeacherInfo {
-}
 .TeacherName {
   font-weight: bold;
 }

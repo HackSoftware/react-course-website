@@ -31,6 +31,7 @@ export default () => {
           <ul>
             <li>CTO at HackSoft.</li>
             <li>Using React everday in a big single page project.</li>
+            <li>Loves teaching and doing it for the last 4 years.</li>
           </ul>
         </div>
       </div>
