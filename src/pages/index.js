@@ -11,6 +11,9 @@ import Footer from '../components/Footer';
 import styles from './index.module.css';
 import './index.css';
 
+const FORM_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSchcj7b7slun0027babtwZFJsd8EFcm_oi5eYNny4999Wr4jQ/viewform';
+
 const IndexPage = () => (
   <React.Fragment>
     <Helmet>
@@ -26,22 +29,29 @@ const IndexPage = () => (
       <Section>
         <h2>Course Info</h2>
         <ul className={styles.List}>
-          <li>Starts on 16th of October, ends on 16th of December.</li>
+          <li>
+            <strong>
+              Starts on 16th of October, ends on 16th of December.
+            </strong>
+          </li>
           <li>
             Twice a week - every Tuesday and Thursday from 19:00 to 21:30.
           </li>
           <li>
             Happening in{' '}
-            <a href="https://www.google.com/maps/place/Hack+Bulgaria/@42.6477396,23.3825581,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa86ed287d5e33:0x315f162015dedaa3!8m2!3d42.6477396!4d23.3847468">
+            <a
+              href="https://www.google.com/maps/place/Hack+Bulgaria/@42.6477396,23.3825581,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa86ed287d5e33:0x315f162015dedaa3!8m2!3d42.6477396!4d23.3847468"
+              target="_blank">
               HackBulgaria's lecture hall
             </a>
           </li>
           <li>
-            Price - <strong>500 BGN without VAT</strong>
+            Price - <strong>600 BGN with VAT included</strong>
           </li>
           <li>
-            You can apply here -{' '}
-            <a href="https://www.hacksoft.io">link to application form</a>
+            <a href={FORM_URL} target="_blank">
+              You can apply here
+            </a>
           </li>
         </ul>
       </Section>
@@ -96,11 +106,18 @@ const IndexPage = () => (
       <Section>
         <h2>Price and Apply</h2>
         <p>
-          The price for this course is <strong>500 BGN without VAT</strong>
+          The price for this course is{' '}
+          <strong>600 BGN with VAT included</strong>
         </p>
         <p>
-          You can apply here -{' '}
-          <a href="https://www.hacksoft.io">link to application form</a>
+          <a href={FORM_URL} target="_blank">
+            You can apply here
+          </a>
+        </p>
+
+        <p>
+          In case you have any questions, drop an email at{' '}
+          <strong>radorado@hacksoft.io</strong>
         </p>
       </Section>
       <Footer />
