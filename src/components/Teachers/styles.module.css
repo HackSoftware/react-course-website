@@ -1,0 +1,16 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TeacherContainer {
+  display: flex;
+}
+
+.TeacherInfo {
+  margin-left: 1rem;
+}
+
+.TeacherName {
+  font-weight: bold;
+}

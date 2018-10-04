@@ -4,6 +4,7 @@ import {Helmet} from 'react-helmet';
 import Inline from '../components/Inline';
 import Container from '../components/container';
 import ReactLogo from '../components/ReactLogo';
+import Teachers from '../components/Teachers';
 
 import styles from './index.module.css';
 import './index.css';
@@ -32,6 +33,10 @@ const IndexPage = () => (
         </li>
         <li>
           Price - <strong>500 BGN without VAT</strong>
+        </li>
+        <li>
+          You can apply here -{' '}
+          <a href="https://www.hacksoft.io">link to application form</a>
         </li>
       </ul>
       <h2>Course Program</h2>
@@ -77,7 +82,15 @@ const IndexPage = () => (
         </li>
       </ul>
       <h2>Course Teachers</h2>
-      <h2>Price</h2>
+      <Teachers />
+      <h2>Price and Apply</h2>
+      <p>
+        The price for this course is <strong>500 BGN without VAT</strong>
+      </p>
+      <p>
+        You can apply here -{' '}
+        <a href="https://www.hacksoft.io">link to application form</a>
+      </p>
     </Container>
   </React.Fragment>
 );
