@@ -16,7 +16,7 @@ const IndexPage = () => (
     </Helmet>
 
     <Container>
-      <h1>
+      <h1 className={styles.Header}>
         <ReactLogo />
         React Course by HackBulgaria - Fall 2018
         <ReactLogo />

@@ -1,16 +1,20 @@
-.Container {
-  display: flex;
-  justify-content: space-between;
+.TeacherImage {
+  width: 20rem;
+  border: 2px solid;
+}
+.TeacherContainer {
+  width: 50%;
+  display: inline-table;
 }
 
-.TeacherContainer {
-  display: flex;
+@media (max-width: 768px) {
+  .TeacherContainer {
+    width: 100%;
+  }
 }
 
 .TeacherInfo {
-  margin-left: 1rem;
 }
-
 .TeacherName {
   font-weight: bold;
 }

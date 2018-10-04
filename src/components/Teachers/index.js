@@ -1,15 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import styles from './styles.module.css';
+import styles from './styles.module.css'
+import radoslav from './radoslav.png'
+import ivaylo from './ivaylo.png'
 
 export default () => {
   return (
     <div className={styles.Container}>
       <div className={styles.TeacherContainer}>
-        <img
-          src="https://placeimg.com/300/300/people"
-          alt="placeholder"
-        />
+        <img className={styles.TeacherImage} src={radoslav} alt="Radoslav" />
         <div className={styles.TeacherInfo}>
           <p className={styles.TeacherName}>Radoslav Georgiev</p>
           <ul>
@@ -26,10 +25,7 @@ export default () => {
         </div>
       </div>
       <div className={styles.TeacherContainer}>
-        <img
-          src="https://placeimg.com/300/300/people"
-          alt="placeholder"
-        />
+        <img className={styles.TeacherImage} src={ivaylo} alt="Ivaylo" />
         <div className={styles.TeacherInfo}>
           <p className={styles.TeacherName}>Ivaylo Bachvarov</p>
           <ul>
@@ -39,5 +35,5 @@ export default () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

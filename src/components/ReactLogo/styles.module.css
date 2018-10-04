@@ -4,6 +4,12 @@
   animation: spin 10s linear infinite;
 }
 
+@media (max-width: 768px) {
+  .ReactLogo {
+    display: none;
+  }
+}
+
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
