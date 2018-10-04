@@ -2,7 +2,7 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 
 import Inline from '../components/Inline';
-import Container from '../components/container';
+import Container from '../components/Container';
 import Section from '../components/Section';
 import ReactLogo from '../components/ReactLogo';
 import Teachers from '../components/Teachers';

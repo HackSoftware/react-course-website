@@ -3,14 +3,3 @@ body {
   width: 100%;
   height: 100vh;
 }
-
-.react-logo {
-    vertical-align: middle;
-    margin: 0;
-    animation: spin 4s linear infinite;
-}
-
-@keyframes spin { 100% { 
-    -webkit-transform: rotate(360deg);
-    transform:rotate(360deg);
-} }
