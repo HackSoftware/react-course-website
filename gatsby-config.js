@@ -5,6 +5,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '509518335896450',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
@@ -21,6 +27,6 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`,
       },
-    }
+    },
   ],
 }

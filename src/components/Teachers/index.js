@@ -1,8 +1,8 @@
 import React from 'react'
 
 import styles from './styles.module.css'
-import radoslav from './radoslav.png'
-import ivaylo from './ivaylo.png'
+import radoslav from './radoslav.jpg'
+import ivaylo from './ivaylo.jpg'
 
 export default () => {
   return (

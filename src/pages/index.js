@@ -19,6 +19,7 @@ const IndexPage = () => (
     <Helmet>
       <link rel="icon" href={favicon} type="image/x-icon" />
       <title>React Course by HackBulgaria</title>
+      <meta name="description" content="React Course by HackBulgaria. Starts on 16th of October, ends on 16th of December. Twice a week - every Tuesday and Thursday from 19:00 to 21:30."/>
     </Helmet>
 
     <Container>
