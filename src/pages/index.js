@@ -1,18 +1,18 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React from 'react';
+import {Helmet} from 'react-helmet';
 
-import Inline from '../components/Inline'
-import Container from '../components/Container'
-import Section from '../components/Section'
-import ReactLogo from '../components/ReactLogo'
-import ApplyHere from '../components/ApplyHere'
-import Teachers from '../components/Teachers'
-import Footer from '../components/Footer'
+import Inline from '../components/Inline';
+import Container from '../components/Container';
+import Section from '../components/Section';
+import ReactLogo from '../components/ReactLogo';
+import ApplyHere from '../components/ApplyHere';
+import Teachers from '../components/Teachers';
+import Footer from '../components/Footer';
 
-import styles from './index.module.css'
-import favicon from './favicon.ico'
+import styles from './index.module.css';
+import favicon from './favicon.ico';
 
-import './index.css'
+import './index.css';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -45,8 +45,7 @@ const IndexPage = () => (
             <a
               href="https://www.google.com/maps/place/Hack+Bulgaria/@42.6477396,23.3825581,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa86ed287d5e33:0x315f162015dedaa3!8m2!3d42.6477396!4d23.3847468"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               HackBulgaria's lecture hall
             </a>
           </li>
@@ -67,18 +66,20 @@ const IndexPage = () => (
 
         <p>
           <strong>
-            The course doesn't assume or require any existing React knowledge.
+            The course will cover best practices and patterns taken from
+            production React apps that we develop and maintain every day.
           </strong>
         </p>
+
         <p>The high level agenda includes:</p>
         <ul className={styles.List}>
           <li>
-            Using <Inline>create-react-app</Inline>
+            Using <Inline>create-react-app</Inline> to bootstrap our apps.
           </li>
           <li>
             Understanding the basic tools like <Inline>node</Inline>,{' '}
-            <Inline>yarn</Inline>, <Inline>npm</Inline>, react dev tools and
-            others.
+            <Inline>yarn</Inline>, <Inline>npm</Inline>, <Inline>nvm</Inline>,{' '}
+            <Inline>npx</Inline>, react dev tools and others.
           </li>
           <li>
             <strong>Everything related to components</strong> - lifecycle
@@ -103,7 +104,7 @@ const IndexPage = () => (
             Running sync and async validations on our forms.
           </li>
           <li>
-            <strong>Doing state management with Redux and Redux Saga</strong>
+            <strong>Doing state management with Redux, Redux Thunk and Redux Saga</strong>
           </li>
           <li>
             <strong>
@@ -119,6 +120,16 @@ const IndexPage = () => (
             configuration.
           </li>
         </ul>
+      </Section>
+      <Section>
+        <h2>Course Prerequisites</h2>
+        <p>
+          <strong>
+            The course doesn't assume or require any existing React knowledge.
+          </strong>
+        </p>
+
+        <p>Previous knowledge of JavaScript is recommended.</p>
       </Section>
       <Section>
         <h2>Course Teachers</h2>
@@ -142,6 +153,6 @@ const IndexPage = () => (
       <Footer />
     </Container>
   </React.Fragment>
-)
+);
 
-export default IndexPage
+export default IndexPage;
