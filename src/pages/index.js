@@ -19,7 +19,10 @@ const IndexPage = () => (
     <Helmet>
       <link rel="icon" href={favicon} type="image/x-icon" />
       <title>React Course by HackBulgaria</title>
-      <meta name="description" content="React Course by HackBulgaria. Starts on 16th of October, ends on 16th of December. Twice a week - every Tuesday and Thursday from 19:00 to 21:30."/>
+      <meta
+        name="description"
+        content="React Course by HackBulgaria. Starts on 16th of October, ends on 16th of December. Twice a week - every Tuesday and Thursday from 19:00 to 21:30."
+      />
     </Helmet>
 
     <Container>
@@ -105,7 +108,9 @@ const IndexPage = () => (
             Running sync and async validations on our forms.
           </li>
           <li>
-            <strong>Doing state management with Redux, Redux Thunk and Redux Saga</strong>
+            <strong>
+              Doing state management with Redux, Redux Thunk and Redux Saga
+            </strong>
           </li>
           <li>
             <strong>
@@ -131,6 +136,11 @@ const IndexPage = () => (
         </p>
 
         <p>Previous knowledge of JavaScript is recommended.</p>
+
+        <p>
+          The course is going to include a lot of coding practices,{' '}
+          <strong>so a laptop is required.</strong>
+        </p>
       </Section>
       <Section>
         <h2>Course Teachers</h2>
